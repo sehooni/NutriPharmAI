@@ -36,7 +36,5 @@ You have to build the conda enviroment. After clone the repository, please make 
 
 4. In the ends, please run the app.py code in your conda enviroments. Then you can access to our webpage which are undisclosed.
 
-In the presentation periods, this webpage will be opened for 72hours!
+During the Global AI week AI Hackaton presentation periods, this webpage will be opened for 72hours!
 
-## Demo video
-![demo_video](https://github.com/user-attachments/assets/c9623614-d425-469f-9725-7d5e0a1d000d)
