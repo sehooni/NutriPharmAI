@@ -34,7 +34,31 @@ You have to build the conda enviroment. After clone the repository, please make 
 
 3. Furthermore, you also have to **Predibase API key** in [app.py](https://github.com/sehooni/NutriPharmAI/blob/90400286cd48f97b8cd62862b85e33a75896a766/app.py#L10). 
 
-4. In the ends, please run the app.py code in your conda enviroments. Then you can access to our webpage which are undisclosed.
+4. In the ends, please **run the app.py** code in your conda enviroments. Then you can access to our webpage which are undisclosed.
+
+## About the Webpage
+In the webpage, you can use 2 service, "Check the recommended dosage of nutritional supplements" and "Chat with Chatbot". Just click the one section!
+
+![web_description1](https://github.com/user-attachments/assets/b43f14d4-e107-4cef-89a3-78bf82855d77)
+
+1. **"Check the recommended dosage of nutritional supplements"**
+
+    In this section, you can check the recommended dosage of nutritional supplements.
+    
+    please input the information; heights, weights, age, sex.
+
+    Additionally, you can choose the nutritional supplements from the nutritional supplement selection. If the nutritional supplements you want to check do not exist in the selection, just write down next to selection and push the add button. 
+    Then the prompt will be generated. 
+    
+    Please write the question what you want. We suggest that there are baseline questions, so you just click the 'generation' button! 
+
+    Then you can get the recommended dosage of nutritional supplements from our service! 
+
+2. **"Chat with Chatbot"**
+
+    In this section, you can chat with our chatbot fine-tuned by the SolarAI.
+    
+    Suggestion input message:  **"your symptoms"** with **"please suggest the medicine"**. 
 
 During the Global AI week AI Hackaton presentation periods, this webpage will be opened for 72hours!
 
