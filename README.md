@@ -20,7 +20,14 @@ In this work, we primarily used the Gradio, LangChain and the Upstage API for so
 ## Installation method
 You have to build the conda enviroment. After clone the repository, please make the conda enviroment by Anaconda.
 
-> $ conda env create -f enviroment.yml
+> $ conda create -n 'env_name' python==3.10.14
+
+> $ conda activate 'env_name'
+
+> $ pip install gradio 
+- because of module version conflict, pleas install after create conda enviroment! Although, there will be some error, it works well. So don't be worry about it.   (updatad in 24.08.22)
+
+~~> $ conda env create -f enviroment.yml~~
 
 ## Usage Instruction
 1. If you want to use this tool, you have to need 4 of api keys.
