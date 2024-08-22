@@ -41,7 +41,17 @@ You have to build the conda enviroment. After clone the repository, please make 
 
 3. Furthermore, you also have to **Predibase API key** in [app.py](https://github.com/sehooni/NutriPharmAI/blob/90400286cd48f97b8cd62862b85e33a75896a766/app.py#L10). 
 
-4. In the ends, please **run the app.py** code in your conda enviroments. Then you can access to our webpage which are undisclosed.
+4. Before run the app.py code, you have to fine-tune the model in the Predibase. There are 2 fine-tuned models in the project; Answer_bot and medi_chatbot. After train the model, there will be adapter_id which have to fill in [RAG.py](https://github.com/sehooni/NutriPharmAI/blob/90400286cd48f97b8cd62862b85e33a75896a766/Module/RAG.py#L214) and [app.py](https://github.com/sehooni/NutriPharmAI/blob/e3b2c9ec5ccd9b610808af1ed71812dadef53f24/app.py#L60)!
+    
+    4.1 Train the answer_bot
+        
+    with **./dataset/final_nutrient_prompt_completion.jsonl**, please use the name for the model as 'AIMedicine'. It's for the[RAG.py](https://github.com/sehooni/NutriPharmAI/blob/90400286cd48f97b8cd62862b85e33a75896a766/Module/RAG.py#L214).
+
+    4.2 Train the medi_chatbot
+
+    with **./dataset/dataset_prompt_completion.jsonl**, please use the name for the model as 'medicine_suggest_model'. It's for the [app.py](https://github.com/sehooni/NutriPharmAI/blob/e3b2c9ec5ccd9b610808af1ed71812dadef53f24/app.py#L60).
+
+5. In the ends, please **run the app.py** code in your conda enviroments. Then you can access to our webpage which are undisclosed.
 
 ## About the Webpage
 In the webpage, you can use 2 service, "Check the recommended dosage of nutritional supplements" and "Chat with Chatbot". Just click the one section!
