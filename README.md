@@ -77,5 +77,5 @@ In the webpage, you can use 2 service, "Check the recommended dosage of nutritio
     
     Suggestion input message:  **"your symptoms"** with **"please suggest the medicine"**. 
 
-During the Global AI week AI Hackaton presentation periods, this webpage will be opened for 72hours!
+During the Global AI week AI Hackaton presentation periods, this webpage will be opened for 72hours! : [Link](https://fa6f1bd10f232da7d3.gradio.live)
 
