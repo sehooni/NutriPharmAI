@@ -1,7 +1,7 @@
 # NutriPharmAI
 > "Nutrition" (영양), "Pharmacy" (약국), 그리고 "AI"를 조합하여, 영양과 약물 관리를 전문적으로 다루는 AI를 표현합니다.
 ---
-Upstage 2024 Global AI week AI Heckaton 출품작 (BisAI)
+Upstage 2024 Global AI week AI Heckathon 출품작 (BisAI)
 ---
 ## Project Overview
 We have developed a model that analyzes the nutritional content of entered supplements to ensure they meet daily recommended intakes, and a pharmacist chatbot that recommends medication based on reported symptoms.
@@ -77,5 +77,5 @@ In the webpage, you can use 2 service, "Check the recommended dosage of nutritio
     
     Suggestion input message:  **"your symptoms"** with **"please suggest the medicine"**. 
 
-During the Global AI week AI Hackaton presentation periods, this webpage will be opened for 72hours! : [Link](https://fa6f1bd10f232da7d3.gradio.live)
+During the Global AI week AI Hackaton presentation periods, this webpage will be opened for 72hours!
 
