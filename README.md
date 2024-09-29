@@ -11,11 +11,11 @@ Our project is a pharmacist chatbot AI that analyzes the ingredients in multiple
 
 The technology stack used in this project includes Python for development, with frameworks such as LangChain for managing task pipelines, and LLMs for generating responses. 
 The Upstage API was utilized in several key areas: 
-    - it facilitated chatbot interactions to determine pipeline direction and generate final answers
-    - it provided embeddings for database creation and query retrieval searches
-    - it was employed for Ground Check to verify the reliability of responses
-    - it processed image data using OCR
-    - it handled PDF file processing through document parsing.
+- it facilitated chatbot interactions to determine pipeline direction and generate final answers
+- it provided embeddings for database creation and query retrieval searches
+- it was employed for Ground Check to verify the reliability of responses
+- it processed image data using OCR
+- it handled PDF file processing through document parsing.
 
 <img width="1148" alt="image" src="https://github.com/user-attachments/assets/b1f23602-61c0-48d1-a03b-3d0f77e801ee">
 
