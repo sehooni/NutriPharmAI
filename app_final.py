@@ -1,23 +1,18 @@
 # Import module
 import gradio as gr
-from predibase import Predibase, FinetuningConfig, DeploymentConfig
+# from predibase import Predibase, FinetuningConfig, DeploymentConfig
 from langchain.schema import AIMessage, HumanMessage
 from openai import OpenAI
-
 from Module import RAG
-
 from PIL import Image
 import requests
 import numpy as np
 import pandas as pd
 import faiss
 
-
-# Predibase api loaded
-pb = Predibase(api_token='...')
-
 api_key = '...'
 client = OpenAI(api_key=api_key)
+
 
 # define the function
 def image_to_text(filename):
@@ -61,7 +56,6 @@ def update_dropdown(text):
 def insert2pill_list(input):
     return input
 
-## sentence build
 def sentence_builder_addition(tall, weight, age, sex, pill, pill_addition, pill_img):
     total_pill = []
     if pill == None :
@@ -97,6 +91,8 @@ def sentence_builder_new(tall, weight, age, sex, pill, pill_info):
         
     if len(total_pill) != 0:
         pill_str = ', '.join(total_pill)
+    else:
+        pill_str = None
     
     input_prompt = f"키 : {tall}cm \n\n몸무게 : {weight}kg \n\n나이 및 성별 : {age} {sex} \n\n복용 중인 영양제 : {pill_str}"
     return input_prompt
@@ -131,12 +127,9 @@ def get_pill_prompt(pill, pill_addition):
     pill_prompt = f"복용 중인 영양제 : {pill_stri}"
     return pill_prompt
 
-
-# comp = '비타민B1: 0.6, 비타민B2: 0.7, 나이아신 (비타민B3): 7.5, 판토텐산 (비타민B5): 2.5, 비타민B6: 0.75, 비오틴 (비타민B7): 15.0, 엽산 (비타민B9): 200.0, 아연: 4.25, 셀레늄: 27.5, 크롬: 15.0, 코엔자임Q10: 100.0 '
-        
         
 ## 영양제 prompt maker
-def call_model(sex, age, pill,pill_info, chat):
+def call_model(sex, age, pill, pill_info, chat):
     total_pill = []
     if pill == None :
         pill = []
@@ -150,15 +143,26 @@ def call_model(sex, age, pill,pill_info, chat):
         pill_str = ', '.join(total_pill)
     # lorax_client = pb.deployments.client("solar-1-mini-chat-240612")
     input_prompt = f"저의 성별은 {sex}, 나이는 {age}입니다.\n 제가 지금 먹고 있는 영양제 제품들은 {pill_str}이고,\n {chat}"
-    output = RAG.LangGraph(pill_str, input_prompt)
+    output = RAG.LangGraph(pill_str, input_prompt, 'sup')
+    # output = lorax_client.generate(input_prompt, adapter_id="AIMedicine/1", max_new_tokens=10000).generated_text
+    return output
+
+def call_model2(chat):
+    output = RAG.LangGraph('', chat, 'medi')
     # output = lorax_client.generate(input_prompt, adapter_id="AIMedicine/1", max_new_tokens=10000).generated_text
     return output
 
 def response(message, history): 
-    lorax_client = pb.deployments.client("solar-1-mini-chat-240612")
-    
-    chat_response = lorax_client.generate(message, adapter_id="medicine_suggest_model/1", max_new_tokens=10000).generated_text
-    return chat_response
+    completion = client.chat.completions.create(
+        model='gpt-4o-mini',
+        messages=[
+            {"role": "system", "content":"넌 약사야."},
+            {"role":"user", "content":f"{message}"}
+        ]
+    )
+    chat_response = completion.choices[0].message.content
+    final_response = call_model2(chat_response)
+    return final_response
 
 def create_radio_options(text):
     addition_choice = gr.Radio(choices=text, label="해당하는 제품을 선택하여주세요.", info='해당하는 제품이 없으면, 해당없음을 선택하세요.')
