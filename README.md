@@ -1,19 +1,23 @@
 # NutriPharmAI
-> "Nutrition" (영양), "Pharmacy" (약국), 그리고 "AI"를 조합하여, 영양과 약물 관리를 전문적으로 다루는 AI를 표현합니다.
+> This project developed a pharmacist chatbot using an LLM and LangChain-managed pipelines to provide accurate recommendations and analyses of supplements and medications, ensuring user safety through interaction checks.
 ---
 Upstage 2024 Global AI week AI Heckathon 출품작 (BisAI)
 ---
 ## Project Overview
-We have developed a model that analyzes the nutritional content of entered supplements to ensure they meet daily recommended intakes, and a pharmacist chatbot that recommends medication based on reported symptoms.
 
+Our project is a pharmacist chatbot AI that analyzes the ingredients in multiple supplements or medications. It identifies cases where the dosage exceeds recommended levels, potentially causing side effects, or detects harmful ingredient interactions. When necessary, the system also recommends products available in Korea. We have implemented this solution using various Upstage APIs, integrated with LangGraph to handle multiple scenarios effectively.
 
-Our Chat model analyzes the names of supplements and medications entered by users, identifies overlapping ingredients, and provides safe dosage recommendations.
+<img width="1251" alt="image" src="https://github.com/user-attachments/assets/4dba634d-026b-49e2-9447-7348749b108f">
 
-![Overview1](https://github.com/user-attachments/assets/35d3427e-5b1a-4bc4-9f8a-6404ef174471)
+The technology stack used in this project includes Python for development, with frameworks such as LangChain for managing task pipelines, and LLMs for generating responses. 
+The Upstage API was utilized in several key areas: 
+    - it facilitated chatbot interactions to determine pipeline direction and generate final answers
+    - it provided embeddings for database creation and query retrieval searches
+    - it was employed for Ground Check to verify the reliability of responses
+    - it processed image data using OCR
+    - it handled PDF file processing through document parsing.
 
-We have fine-tuned an LLM model to better understand user questions and provide specialized responses, and by using RAG (Retrieval-Augmented Generation), we can analyze complex product ingredient and nutritional data.
-
-![Overview2](https://github.com/user-attachments/assets/211a647b-a6c9-4d5d-ad28-9a608ec9bfd5)
+<img width="1148" alt="image" src="https://github.com/user-attachments/assets/b1f23602-61c0-48d1-a03b-3d0f77e801ee">
 
 In this work, we primarily used the Gradio, LangChain and the Upstage API for solar-1-mini-chat-240612 model fine-tuning, generation, and checking groundness.
 
