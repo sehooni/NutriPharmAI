@@ -24,6 +24,8 @@ You have to build the conda enviroment. After clone the repository, please make 
 
 > $ conda activate 'env_name'
 
+> $ pip install -r requirements.txt
+
 > $ pip install gradio 
 - because of module version conflict, please install some module after create conda enviroment! Although, there will be some error, it works well. So don't be worry about it.   (updatad in 24.08.22)
 
