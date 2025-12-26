@@ -54,7 +54,7 @@ kiwipiepy_model==0.18.0
 kiwisolver==1.4.5
 langchain==0.2.14
 langchain-community==0.2.12
-langchain-core==0.2.33
+langchain-core==0.3.81
 langchain-openai==0.1.22
 langchain-text-splitters==0.2.2
 langchain-upstage==0.1.7
