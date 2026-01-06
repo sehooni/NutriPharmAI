@@ -119,7 +119,7 @@ shortuuid==1.0.13
 sniffio==1.3.1
 SQLAlchemy==2.0.32
 # stack-data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1669632077133/work
-starlette==0.38.2
+starlette==0.49.1
 tabulate==0.9.0
 tenacity==8.5.0
 tiktoken==0.7.0
