@@ -59,7 +59,7 @@ langchain-openai==0.1.22
 langchain-text-splitters==0.3.9
 langchain-upstage==0.1.7
 langgraph==0.2.4
-langgraph-checkpoint==1.0.3
+langgraph-checkpoint==3.0.0
 langsmith==0.1.99
 lorax-client==0.6.2
 markdown-it-py==3.0.0
