@@ -43,7 +43,7 @@ importlib_resources==6.4.2
 ipyplot==1.1.2
 # ipython @ file:///home/conda/feedstock_root/build_artifacts/ipython_1719582526268/work
 # jedi @ file:///home/conda/feedstock_root/build_artifacts/jedi_1696326070614/work
-Jinja2==3.1.4
+Jinja2==3.1.6
 jiter==0.5.0
 jsonpatch==1.33
 jsonpointer==3.0.0
