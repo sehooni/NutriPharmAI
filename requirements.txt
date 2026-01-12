@@ -98,7 +98,7 @@ pydub==0.25.1
 # Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1714846767233/work
 PyJWT==2.9.0
 pyparsing==3.1.2
-pypdf==4.3.1
+pypdf==6.6.0
 # python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
 python-multipart==0.0.18
 python-rapidjson==1.20
