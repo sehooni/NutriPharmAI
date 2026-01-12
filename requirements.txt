@@ -64,7 +64,7 @@ langsmith==0.1.99
 lorax-client==0.6.2
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
-marshmallow==3.21.3
+marshmallow==3.26.2
 marshmallow-enum==1.5.1
 matplotlib==3.9.2
 # matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1713250518406/work
