@@ -86,7 +86,7 @@ predibase==2024.8.4
 predibase-api==2024.8.4
 progress-table==0.1.26
 # prompt_toolkit @ file:///home/conda/feedstock_root/build_artifacts/prompt-toolkit_1718047967974/work
-protobuf==5.29.5
+protobuf==5.29.6
 # psutil @ file:///Users/runner/miniforge3/conda-bld/psutil_1719274593229/work
 # ptyprocess @ file:///home/conda/feedstock_root/build_artifacts/ptyprocess_1609419310487/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
 # pure_eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1721585709575/work
