@@ -74,7 +74,7 @@ mypy-extensions==1.0.0
 # nest_asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1705850609492/work
 numpy==1.26.4
 openai==1.40.8
-orjson==3.10.7
+orjson==3.11.6
 # packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
 pandas==2.2.2
 # parso @ file:///home/conda/feedstock_root/build_artifacts/parso_1712320355065/work
