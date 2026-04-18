@@ -55,7 +55,7 @@ kiwisolver==1.4.5
 langchain==0.2.14
 langchain-community==0.3.27
 langchain-core==1.2.28
-langchain-openai==0.1.22
+langchain-openai==1.1.14
 langchain-text-splitters==1.1.2
 langchain-upstage==0.1.7
 langgraph==1.0.10rc1
