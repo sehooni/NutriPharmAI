@@ -60,7 +60,7 @@ langchain-text-splitters==1.1.2
 langchain-upstage==0.1.7
 langgraph==1.0.10rc1
 langgraph-checkpoint==4.0.0
-langsmith==0.1.99
+langsmith==0.7.31
 lorax-client==0.6.2
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
